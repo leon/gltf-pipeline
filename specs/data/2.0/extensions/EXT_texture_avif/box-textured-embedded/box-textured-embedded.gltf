@@ -1,0 +1,219 @@
+{
+  "asset": {
+    "generator": "COLLADA2GLTF",
+    "version": "2.0"
+  },
+  "extensionsUsed": [
+    "EXT_texture_avif"
+  ],
+  "extensionsRequired": [
+    "EXT_texture_avif"
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "mesh": 0
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 0,
+          "mode": 4,
+          "material": 0
+        }
+      ],
+      "name": "Mesh"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5123,
+      "count": 36,
+      "max": [
+        23
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 288,
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "min": [
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        6,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "roughnessFactor": 1
+      },
+      "name": "Texture",
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "EXT_texture_avif": {
+          "source": 0
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "cesium logo",
+      "bufferView": 3,
+      "mimeType": "image/avif"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9986,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 768,
+      "byteLength": 72,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 576,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 576,
+      "byteLength": 192,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 0,
+      "byteLength": 1134
+    }
+  ],
+  "buffers": [
+    {
+      "name": "box-textured-separate",
+      "byteLength": 840,
+      "uri": "data:application/octet-stream;base64,AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAvwAAAL8AAAA/AAAAPwAAAL8AAAA/AAAAvwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAL8AAAA/AAAAPwAAAD8AAAC/AAAAPwAAAL8AAAC/AAAAvwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAvwAAAD8AAAC/AAAAPwAAAD8AAAC/AAAAPwAAAL8AAAA/AAAAvwAAAL8AAAA/AAAAPwAAAL8AAAC/AAAAvwAAAL8AAAC/AAAAvwAAAL8AAAA/AAAAvwAAAD8AAAA/AAAAvwAAAL8AAAC/AAAAvwAAAD8AAAC/AAAAvwAAAL8AAAC/AAAAvwAAAD8AAAC/AAAAPwAAAL8AAAC/AAAAPwAAAD8AAAC/AADAQAAAAAAAAKBAAAAAAAAAwED+/38/AACgQP7/fz8AAIBAAAAAAAAAoEAAAAAAAACAQAAAgD8AAKBAAACAPwAAAEAAAAAAAACAPwAAAAAAAABAAACAPwAAgD8AAIA/AABAQAAAAAAAAIBAAAAAAAAAQEAAAIA/AACAQAAAgD8AAEBAAAAAAAAAAEAAAAAAAABAQAAAgD8AAABAAACAPwAAAAAAAAAAAAAAAP7/fz8AAIA/AAAAAAAAgD/+/38/AAABAAIAAwACAAEABAAFAAYABwAGAAUACAAJAAoACwAKAAkADAANAA4ADwAOAA0AEAARABIAEwASABEAFAAVABYAFwAWABUA"
+    },
+    {
+      "name": "cesium logo.avif",
+      "byteLength": 1134,
+      "uri": "data:application/octet-stream;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAA1QAAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAIAAAACAAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQAMAAAAABNjb2xybmNseAACAAIABoAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAA1xtZGF0EgAKCRgZv/9ogQEDQjLEBhIQBdcoMUXBQNf/L/eolWm73i0VeEowT/mWhhXmXgA9NAjykCN286sJctGjr0fIAQPJYLg4tMy1dStWvpf+7oWbvXpBa6ltJftX56YehsVuUey63MoRrlslkQl5eEu/QEgWvm0g9D6TPJCVphOPGwhwBnHhHc+2PFfBknU4uFO9r///saRJb7xuzdYP7AAA1WB0PjkyVIs4ExGKLV/YgJrYnL4EbfM6CIHZ/8MzSUMe/z5gAAU0of24ZR/IGqm1/2oIlQjEs8nHUuXJrwkKS0DPEbmZNdY4qU+yNMRAUsEKYK/OgOu4/J08KilmNL8252ZW33MN/c29x9K+b01ywvElJ7NiohouAACHProFYjOMnFV7z+5xSHdkZv6/Jpm2o6EVJqLW33oF2oKk7Wp+GJtmfWwKKyPNkUQ58tO/bInwKinJfZB4nd9se98nnv1TSvIoblvLSIksfXeKrTLZttdU5z/tBXxYWwiTYacVFqKB9cy0+PJu3wDUJIpynXxXNpuHFYvjESETSZu0MYUrwoDRtK2up09W+TzuAs2oeEx3DPi3kxBcqEhXbZH/EQwibWzak4I26noOm4TuG73BoHXsF90GXRqynmPzuZUxkspdI7vCQceL1sgIEVxImM/MrKjmNgc1PpxIWziJ2TMhWsGqCamRI4QYcqGybagHEJR0wuq3C7vIOZtFYgRbKU5EByzJEMz2+6v8EFlf47waTSQ0pGDvROCDAQN7hKzcfIoR3XE1iyhmG404rw36LG6YJmehRPZuM1HTaDIe5rhFvC+irYkM4flawoVP9d9fCjB7nzKqaV1vRStly39k0vJdgkeU5oL2zGtAnS250z/pSyeaBd5R4RJb9hC3iQlri/PDrRhouNkTgHnhDgPUlpk/j42o5Jx1xyo3otZdiR/jpYI6AHTOcCYu6MLOH9T2ahhxuuPdSIt8LJ4bk4svCyDMoB71HNg7yPJbAYzdpuvlI/DvK1Q8Q4plruMUrIauWaIuQmBG/7IFeHE10jLsw4WxzNs8ywqD7Ffp+GoV6Q4twrDYdsYE1UsBw5QYMuRZJZM6Zms0jnABDL1k3gyPhBPX/YbRRlkGBtfhIOlNhc6azPClhTm5"
+    }
+  ]
+}

@@ -12,6 +12,10 @@ const gltfWebpPath =
   "specs/data/2.0/extensions/EXT_texture_webp/box-textured-embedded/box-textured-embedded.gltf";
 const gltfWebpSeparatePath =
   "specs/data/2.0/extensions/EXT_texture_webp/box-textured-separate/box-textured-separate.gltf";
+const gltfAVIFPath =
+  "specs/data/2.0/extensions/EXT_texture_avif/box-textured-embedded/box-textured-embedded.gltf";
+const gltfAVIFSeparatePath =
+  "specs/data/2.0/extensions/EXT_texture_avif/box-textured-separate/box-textured-separate.gltf";
 const gltfMeshoptFallbackPath =
   "specs/data/2.0/extensions/EXT_meshopt_compression/meshopt-fallback/meshopt-fallback.gltf";
 const gltfMeshoptNoFallbackPath =
@@ -162,6 +166,30 @@ describe("processGltf", () => {
 
     const imageId = results.gltf.textures[0].extensions.EXT_texture_webp.source;
     expect(results.gltf.images[imageId].mimeType).toBe("image/webp");
+  });
+
+  it("processes gltf with EXT_texture_avif extension.", async () => {
+    const gltf = fsExtra.readJsonSync(gltfAVIFSeparatePath);
+    const options = {
+      resourceDirectory: path.dirname(gltfAVIFSeparatePath),
+    };
+    const results = await processGltf(gltf, options);
+    expect(results.gltf).toBeDefined();
+    expect(results.gltf.textures[0].extensions.EXT_texture_avif).toBeDefined();
+
+    const imageId = results.gltf.textures[0].extensions.EXT_texture_avif.source;
+    expect(results.gltf.images[imageId].mimeType).toBe("image/avif");
+  });
+
+  it("processes embedded gltf with EXT_texture_avif extension.", async () => {
+    const gltf = fsExtra.readJsonSync(gltfAVIFPath);
+
+    const results = await processGltf(gltf);
+    expect(results.gltf).toBeDefined();
+    expect(results.gltf.textures[0].extensions.EXT_texture_avif).toBeDefined();
+
+    const imageId = results.gltf.textures[0].extensions.EXT_texture_avif.source;
+    expect(results.gltf.images[imageId].mimeType).toBe("image/avif");
   });
 
   it("processes gltf with EXT_meshopt_compression extension that has fallback buffer.", async () => {

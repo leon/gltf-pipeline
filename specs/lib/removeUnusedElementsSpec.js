@@ -716,6 +716,9 @@ describe("removes unused materials, textures, images, samplers", () => {
         {
           name: "6",
         },
+        {
+          name: "7",
+        },
       ],
       textures: [
         {
@@ -732,6 +735,13 @@ describe("removes unused materials, textures, images, samplers", () => {
           extensions: {
             KHR_texture_basisu: {
               source: 6,
+            },
+          },
+        },
+        {
+          extensions: {
+            EXT_texture_avif: {
+              source: 7,
             },
           },
         },

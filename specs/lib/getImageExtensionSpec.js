@@ -23,6 +23,9 @@ const ktx2Data = dataUriToBuffer(
 const basisData = dataUriToBuffer(
   "data:image/basis;base64,c0ITAE0AAA9wAAAAqewBAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAQBkAAAAKAAAAQCMAAAABQAAkQAAACsAAABNAAAAAAAAAAAAAAAAAAAAAAEAAQABAAEAvAAAAAEAAACPUwHABAAAAAAAAAICmAgAAAAAAEASBAATAAAAAAAAiABgAgAAAAAAABFUVVVVBQDBRAAAAAAAAPJfLQCYAAAAAAAAQAgAEwACAAAAAIgBwAQAAAAAAAACCAAA"
 );
+const avifData = dataUriToBuffer(
+  "data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAA1QAAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAIAAAACAAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQAMAAAAABNjb2xybmNseAACAAIABoAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAA1xtZGF0EgAKCRgZv/9ogQEDQjLEBhIQBdcoMUXBQNf/L/eolWm73i0VeEowT/mWhhXmXgA9NAjykCN286sJctGjr0fIAQPJYLg4tMy1dStWvpf+7oWbvXpBa6ltJftX56YehsVuUey63MoRrlslkQl5eEu/QEgWvm0g9D6TPJCVphOPGwhwBnHhHc+2PFfBknU4uFO9r///saRJb7xuzdYP7AAA1WB0PjkyVIs4ExGKLV/YgJrYnL4EbfM6CIHZ/8MzSUMe/z5gAAU0of24ZR/IGqm1/2oIlQjEs8nHUuXJrwkKS0DPEbmZNdY4qU+yNMRAUsEKYK/OgOu4/J08KilmNL8252ZW33MN/c29x9K+b01ywvElJ7NiohouAACHProFYjOMnFV7z+5xSHdkZv6/Jpm2o6EVJqLW33oF2oKk7Wp+GJtmfWwKKyPNkUQ58tO/bInwKinJfZB4nd9se98nnv1TSvIoblvLSIksfXeKrTLZttdU5z/tBXxYWwiTYacVFqKB9cy0+PJu3wDUJIpynXxXNpuHFYvjESETSZu0MYUrwoDRtK2up09W+TzuAs2oeEx3DPi3kxBcqEhXbZH/EQwibWzak4I26noOm4TuG73BoHXsF90GXRqynmPzuZUxkspdI7vCQceL1sgIEVxImM/MrKjmNgc1PpxIWziJ2TMhWsGqCamRI4QYcqGybagHEJR0wuq3C7vIOZtFYgRbKU5EByzJEMz2+6v8EFlf47waTSQ0pGDvROCDAQN7hKzcfIoR3XE1iyhmG404rw36LG6YJmehRPZuM1HTaDIe5rhFvC+irYkM4flawoVP9d9fCjB7nzKqaV1vRStly39k0vJdgkeU5oL2zGtAnS250z/pSyeaBd5R4RJb9hC3iQlri/PDrRhouNkTgHnhDgPUlpk/j42o5Jx1xyo3otZdiR/jpYI6AHTOcCYu6MLOH9T2ahhxuuPdSIt8LJ4bk4svCyDMoB71HNg7yPJbAYzdpuvlI/DvK1Q8Q4plruMUrIauWaIuQmBG/7IFeHE10jLsw4WxzNs8ywqD7Ffp+GoV6Q4twrDYdsYE1UsBw5QYMuRZJZM6Zms0jnABDL1k3gyPhBPX/YbRRlkGBtfhIOlNhc6azPClhTm5"
+);
 const textData = dataUriToBuffer("data:text/plain;charset=utf-8,randomtext");
 
 describe("getImageExtension", () => {
@@ -33,6 +36,7 @@ describe("getImageExtension", () => {
     expect(getImageExtension(bmpData)).toBe(".bmp");
     expect(getImageExtension(ktx2Data)).toBe(".ktx2");
     expect(getImageExtension(basisData)).toBe(".basis");
+    expect(getImageExtension(avifData)).toBe(".avif");
   });
 
   it("throws error if buffer does not contain image data", () => {
